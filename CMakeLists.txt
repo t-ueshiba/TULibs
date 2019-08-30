@@ -41,6 +41,7 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/TUvV4L2++
     ${PROJECT_SOURCE_DIR}/TUOgl++
     ${PROJECT_SOURCE_DIR}/TUQt++
+    ${PROJECT_SOURCE_DIR}/TUCuda++
 )
 
 add_subdirectory(TUTools++)
@@ -55,4 +56,5 @@ add_subdirectory(TUOgl++)
 add_subdirectory(TUXv++)
 add_subdirectory(TUUSB++)
 add_subdirectory(TUQt++)
+add_subdirectory(TUCuda++)
 add_subdirectory(cmake_modules)
