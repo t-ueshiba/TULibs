@@ -34,26 +34,26 @@ endif()
 
 include_directories(
     ${PROJECT_SOURCE_DIR}/TUTools++
-#    ${PROJECT_SOURCE_DIR}/TUv++
+    ${PROJECT_SOURCE_DIR}/TUv++
     ${PROJECT_SOURCE_DIR}/TUIIDC++
-#    ${PROJECT_SOURCE_DIR}/TUvIIDC++
+    ${PROJECT_SOURCE_DIR}/TUvIIDC++
     ${PROJECT_SOURCE_DIR}/TUV4L2++
-#    ${PROJECT_SOURCE_DIR}/TUvV4L2++
-#    ${PROJECT_SOURCE_DIR}/TUOgl++
+    ${PROJECT_SOURCE_DIR}/TUvV4L2++
+    ${PROJECT_SOURCE_DIR}/TUOgl++
     ${PROJECT_SOURCE_DIR}/TUQt++
     ${PROJECT_SOURCE_DIR}/TUCuda++
 )
 
 add_subdirectory(TUTools++)
-#add_subdirectory(TUv++)
+add_subdirectory(TUv++)
 add_subdirectory(TUIIDC++)
-#add_subdirectory(TUvIIDC++)
+add_subdirectory(TUvIIDC++)
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
   add_subdirectory(TUV4L2++)
-#  add_subdirectory(TUvV4L2++)
+  add_subdirectory(TUvV4L2++)
   add_subdirectory(TUCuda++)
 endif()
-#add_subdirectory(TUOgl++)
+add_subdirectory(TUOgl++)
 #add_subdirectory(TUXv++)
 #add_subdirectory(TUUSB++)
 add_subdirectory(TUQt++)
