@@ -4,40 +4,6 @@ project(Libraries)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
-set(CMAKE_MODULE_PATH
-    ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/TUTools/cmake_modules")
-include(BuildType)
-include(FindSIMD)
-FindSIMD()
-
-if(AVX2_FOUND)
-  add_definitions(-DAVX2)
-  set(CMAKE_CXX_FLAGS -mavx2)
-elseif(AVX_FOUND)
-  add_definitions(-DAVX)
-  set(CMAKE_CXX_FLAGS -mavx)
-elseif(SSE4_2_FOUND)
-  add_definitions(-DSSE4)
-  set(CMAKE_CXX_FLAGS "-msse4.2 -mpopcnt")
-elseif(SSSE3_FOUND)
-  add_definitions(-DSSSE3)
-  set(CMAKE_CXX_FLAGS "-msse3 -mssse3")
-elseif(SSE3_FOUND)
-  add_definitions(-DSSE3)
-  set(CMAKE_CXX_FLAGS -msse3)
-elseif(SSE2_FOUND)
-  add_definitions(-DSSE2)
-  set(CMAKE_CXX_FLAGS -msse2)
-elseif(NEON_FOUND)
-  add_definitions(-DNEON)
-  if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-    set(CMAKE_CXX_FLAGS "-mcpu=cortex-a7 -mtune=cortex-a7 -mfpu=neon
-  -funsafe-math-optimizations")
-  else()
-    set(CMAKE_CXX_FLAGS "-mcpu=apple-m2 -mtune=apple-m2")
-  endif()  
-endif()
-
 include_directories(
     ${PROJECT_SOURCE_DIR}/TUTools
     ${PROJECT_SOURCE_DIR}/TUv

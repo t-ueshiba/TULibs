@@ -1,5 +1,6 @@
 #/bin/bash
 
+REPO="https://gitlab.com/t-ueshiba"
 libs="TUBrep TUCan TUCuda TUHRP2 TUIIDC TUObject TUQt \
       TUTools TUUSB TUV4L2 TUVision TUXv TUv TUvIIDC TUvOgl TUvV4L2"
 
