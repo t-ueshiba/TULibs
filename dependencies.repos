@@ -1,0 +1,45 @@
+repositories:
+  TUTools:
+    type: git
+    url: git@github.com:t-ueshiba/TUTools
+    version: develop
+  TUCuda:
+    type: git
+    url: git@github.com:t-ueshiba/TUCuda
+    version: develop
+  TUQt:
+    type: git
+    url: git@github.com:t-ueshiba/TUQt
+    version: develop
+  TUUSB:
+    type: git
+    url: git@github.com:t-ueshiba/TUUSB
+    version: develop
+  TUIIDC:
+    type: git
+    url: git@github.com:t-ueshiba/TUIIDC
+    version: develop
+  TUV4L2:
+    type: git
+    url: git@github.com:t-ueshiba/TUV4L2
+    version: develop
+  TUv:
+    type: git
+    url: git@github.com:t-ueshiba/TUv
+    version: develop
+  TUvIIDC:
+    type: git
+    url: git@github.com:t-ueshiba/TUvIIDC
+    version: develop
+  TUvV4L2:
+    type: git
+    url: git@github.com:t-ueshiba/TUvV4L2
+    version: develop
+  TUvOgl:
+    type: git
+    url: git@github.com:t-ueshiba/TUvOgl
+    version: develop
+  TUXv:
+    type: git
+    url: git@github.com:t-ueshiba/TUXv
+    version: develop
